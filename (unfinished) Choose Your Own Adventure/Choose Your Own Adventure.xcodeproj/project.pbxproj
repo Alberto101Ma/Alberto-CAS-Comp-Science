@@ -12,7 +12,7 @@
 		99505C7F233E708200D56671 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99505C7E233E708200D56671 /* ViewController.swift */; };
 		99505C82233E708200D56671 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99505C80233E708200D56671 /* Main.storyboard */; };
 		99505C87233E708200D56671 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99505C85233E708200D56671 /* LaunchScreen.storyboard */; };
-		D3B4104B233EEE3C00C1D391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3B4104A233EEE3C00C1D391 /* Assets.xcassets */; };
+		D3B2D134233EF3C600BAF1CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3B2D133233EF3C600BAF1CB /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		99505C81233E708200D56671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99505C86233E708200D56671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99505C88233E708200D56671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3B4104A233EEE3C00C1D391 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		D3B2D133233EF3C600BAF1CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +60,9 @@
 				99505C7C233E708200D56671 /* SceneDelegate.swift */,
 				99505C7E233E708200D56671 /* ViewController.swift */,
 				99505C80233E708200D56671 /* Main.storyboard */,
+				D3B2D133233EF3C600BAF1CB /* Assets.xcassets */,
 				99505C85233E708200D56671 /* LaunchScreen.storyboard */,
 				99505C88233E708200D56671 /* Info.plist */,
-				D3B4104A233EEE3C00C1D391 /* Assets.xcassets */,
 			);
 			path = "Choose Your Own Adventure";
 			sourceTree = "<group>";
@@ -126,7 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99505C87233E708200D56671 /* LaunchScreen.storyboard in Resources */,
-				D3B4104B233EEE3C00C1D391 /* Assets.xcassets in Resources */,
+				D3B2D134233EF3C600BAF1CB /* Assets.xcassets in Resources */,
 				99505C82233E708200D56671 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
