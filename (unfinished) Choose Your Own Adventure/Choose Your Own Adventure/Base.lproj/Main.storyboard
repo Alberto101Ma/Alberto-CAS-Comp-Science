@@ -322,43 +322,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camp" translatesAutoresizingMaskIntoConstraints="NO" id="Fz0-qL-sRp">
-                                <rect key="frame" x="36" y="348" width="342" height="200"/>
+                                <rect key="frame" x="86" y="297.66666666666669" width="243" height="207"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ok cool! Now what? Back to square one.." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E46-gk-D5k">
-                                <rect key="frame" x="0.0" y="101" width="414" height="127"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="127" id="MsG-9P-Pai"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agp-kp-egJ">
-                                <rect key="frame" x="36" y="621" width="343" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="shG-5D-57b"/>
-                                </constraints>
+                                <rect key="frame" x="36" y="577.66666666666663" width="343" height="94.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Go back to the beginning"/>
                                 <connections>
                                     <segue destination="P08-hn-bOU" kind="show" id="8M3-hX-70m"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ok cool! Now what? Back to square one.." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E46-gk-D5k">
+                                <rect key="frame" x="0.0" y="48.000000000000007" width="414" height="76.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="E46-gk-D5k" firstAttribute="top" secondItem="YVX-DX-v0E" secondAttribute="top" constant="101" id="1Go-S0-QS9"/>
-                            <constraint firstItem="E46-gk-D5k" firstAttribute="centerX" secondItem="Fz0-qL-sRp" secondAttribute="centerX" id="CLJ-FH-hvr"/>
-                            <constraint firstItem="Agp-kp-egJ" firstAttribute="top" secondItem="Fz0-qL-sRp" secondAttribute="bottom" constant="73" id="MDn-fH-6N4"/>
-                            <constraint firstItem="YVX-DX-v0E" firstAttribute="bottom" secondItem="Agp-kp-egJ" secondAttribute="bottom" constant="136" id="ReG-mh-z31"/>
-                            <constraint firstItem="YVX-DX-v0E" firstAttribute="trailing" secondItem="Agp-kp-egJ" secondAttribute="trailing" constant="35" id="StH-by-wul"/>
-                            <constraint firstItem="Agp-kp-egJ" firstAttribute="leading" secondItem="YVX-DX-v0E" secondAttribute="leading" constant="36" id="Z8I-YZ-QWj"/>
-                            <constraint firstItem="Agp-kp-egJ" firstAttribute="leading" secondItem="Fz0-qL-sRp" secondAttribute="leading" id="bTh-dZ-Blv"/>
-                            <constraint firstItem="YVX-DX-v0E" firstAttribute="trailing" secondItem="Fz0-qL-sRp" secondAttribute="trailing" constant="35" id="gUe-bF-DPe"/>
-                            <constraint firstItem="Fz0-qL-sRp" firstAttribute="top" secondItem="E46-gk-D5k" secondAttribute="bottom" constant="120" id="h7A-zF-1cx"/>
-                            <constraint firstItem="Fz0-qL-sRp" firstAttribute="leading" secondItem="YVX-DX-v0E" secondAttribute="leading" constant="36" id="nzN-nO-ltN"/>
-                            <constraint firstAttribute="trailing" secondItem="E46-gk-D5k" secondAttribute="trailing" id="pe2-zl-XtK"/>
-                            <constraint firstItem="E46-gk-D5k" firstAttribute="leading" secondItem="75t-M4-4vF" secondAttribute="leading" id="ttF-3c-SR7"/>
+                            <constraint firstItem="Agp-kp-egJ" firstAttribute="leading" secondItem="YVX-DX-v0E" secondAttribute="leading" constant="36" id="2dy-MU-dDJ"/>
+                            <constraint firstItem="E46-gk-D5k" firstAttribute="leading" secondItem="YVX-DX-v0E" secondAttribute="leading" id="EbB-yw-7Ml"/>
+                            <constraint firstItem="Fz0-qL-sRp" firstAttribute="leading" secondItem="YVX-DX-v0E" secondAttribute="leading" constant="86" id="FsY-uU-ogB"/>
+                            <constraint firstItem="YVX-DX-v0E" firstAttribute="trailing" secondItem="Fz0-qL-sRp" secondAttribute="trailing" constant="85" id="L7i-0e-O3X"/>
+                            <constraint firstItem="E46-gk-D5k" firstAttribute="trailing" secondItem="YVX-DX-v0E" secondAttribute="trailing" id="OBi-eB-xwx"/>
+                            <constraint firstItem="E46-gk-D5k" firstAttribute="top" secondItem="YVX-DX-v0E" secondAttribute="top" constant="48" id="Rw9-OM-HO5"/>
+                            <constraint firstItem="YVX-DX-v0E" firstAttribute="bottom" secondItem="Agp-kp-egJ" secondAttribute="bottom" constant="136" id="VXS-uQ-yLI"/>
+                            <constraint firstItem="Fz0-qL-sRp" firstAttribute="top" secondItem="E46-gk-D5k" secondAttribute="bottom" constant="173" id="Xel-Kv-zqD"/>
+                            <constraint firstItem="Agp-kp-egJ" firstAttribute="top" secondItem="Fz0-qL-sRp" secondAttribute="bottom" constant="73" id="Zy4-tC-7Pf"/>
+                            <constraint firstItem="YVX-DX-v0E" firstAttribute="trailing" secondItem="Agp-kp-egJ" secondAttribute="trailing" constant="35" id="f4P-zf-1hn"/>
+                            <constraint firstItem="Agp-kp-egJ" firstAttribute="top" secondItem="Fz0-qL-sRp" secondAttribute="bottom" constant="73" id="nEx-mI-zn8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YVX-DX-v0E"/>
                     </view>
@@ -502,8 +495,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="and you fall into the lava!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2W-N7-Lva">
-                                <rect key="frame" x="11" y="-312.33333333333326" width="383" height="38.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and you fall into the lava!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2W-N7-Lva">
+                                <rect key="frame" x="11" y="-312.33333333333331" width="383" height="38.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -521,6 +514,7 @@
                             <constraint firstItem="sS3-A8-nFc" firstAttribute="top" secondItem="EAi-rf-hdO" secondAttribute="bottom" constant="56" id="TH7-x3-cyh"/>
                             <constraint firstItem="EAi-rf-hdO" firstAttribute="leading" secondItem="V2W-N7-Lva" secondAttribute="leading" id="TRD-CN-hgf"/>
                             <constraint firstItem="EAi-rf-hdO" firstAttribute="trailing" secondItem="uck-fn-Kqb" secondAttribute="trailingMargin" id="Yhd-aN-wJL"/>
+                            <constraint firstItem="V2W-N7-Lva" firstAttribute="top" secondItem="uck-fn-Kqb" secondAttribute="top" constant="-312.33333333333326" id="bOE-Xw-24D"/>
                             <constraint firstItem="sS3-A8-nFc" firstAttribute="centerX" secondItem="uck-fn-Kqb" secondAttribute="centerX" id="feq-3x-rMa"/>
                             <constraint firstItem="kqw-IJ-Yr9" firstAttribute="top" secondItem="LIs-HK-eo5" secondAttribute="top" id="k4Z-eZ-MhH"/>
                             <constraint firstItem="EAi-rf-hdO" firstAttribute="trailing" secondItem="V2W-N7-Lva" secondAttribute="trailing" id="ndH-72-pb8"/>
@@ -781,7 +775,6 @@
         <image name="youwin" width="995" height="996"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="g8n-OF-UVm"/>
         <segue reference="8M3-hX-70m"/>
     </inferredMetricsTieBreakers>
 </document>
