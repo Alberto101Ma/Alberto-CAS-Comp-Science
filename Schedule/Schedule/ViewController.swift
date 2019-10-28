@@ -40,16 +40,20 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var label: UILabel!
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    }
+        }
 
     
-      func numberOfComponents(in pickerView: UIPickerView) -> Int {
-          return 3
-      }
+    func numberOfComponents(in pickerView: UIPickerView) -> Int{
+        return 3
+    }
       
+    
       func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
           if component == 0{
               return dayTypes.count
