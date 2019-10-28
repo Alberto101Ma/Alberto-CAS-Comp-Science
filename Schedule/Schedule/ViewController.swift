@@ -33,7 +33,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     let afternoonSchedule : [String:String] =
                         ["Monday": "Music Theory 3",
                         "Tuesday": "Keyboard",
-                        "Wednesday": "Music Theory",  "Thursday": "Life Skills",
+                        "Wednesday": "Music Theory 3",  "Thursday": "Life Skills",
                             "Friday": "Free Period"]
 
     @IBOutlet weak var button: UIButton!
