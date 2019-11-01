@@ -73,7 +73,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
                   }
                   else if component == 1{
                       return weekdays[row]
-        
                   }
                   else{
                      return schedule[row]
