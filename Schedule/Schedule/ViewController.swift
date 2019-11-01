@@ -25,7 +25,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
       
     let mySchedule: [String:String] =
                     ["A": "CAS Mandarin",
-                     "B": "CAS Comp Science",
+                     "B": "CAS CS",
                      "C": "English 3H",
                     "E": "CAS OChem",
                     "F": "Trig Honors"]
