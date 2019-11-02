@@ -37,30 +37,30 @@ func numberName(inputnumber: Int) -> String{
     if (inputnumber == 1){
         return "one"
     }
-    else if (inputnumber == 2) {
+    if (inputnumber == 2) {
         return "two"
     }
-    else if  (inputnumber == 3) {
+    if  (inputnumber == 3) {
         return "three"
     }
-    else if (inputnumber == 4) {
+    if (inputnumber == 4) {
         return "four"
     }
-    else if (inputnumber == 5) {
+    if (inputnumber == 5) {
         return "five"
     }
-    else if (inputnumber == 6){
+  if (inputnumber == 6){
         return "six"
     }
-    else if (inputnumber == 7) {
+    if (inputnumber == 7) {
         return "one"
     }
     
-    else if (inputnumber == 8) {
+    if (inputnumber == 8) {
         return "eight"
     }
     
-    else if (inputnumber == 9) {
+    if (inputnumber == 9) {
         return "nine"
     }
     else{
@@ -68,6 +68,6 @@ func numberName(inputnumber: Int) -> String{
     }
 }
 print(numberName(inputnumber:8))
-
+print(numberName)
 
 
