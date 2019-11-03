@@ -46,7 +46,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         super.viewDidLoad()
         pickerView.selectRow(getTodayWeekDay(), inComponent: 1, animated: true)
     }
-
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int{
         return 3
@@ -164,6 +163,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         var weekDay =  "\(dateFormatter.string(from: Date()))" //
         print(weekDay)
         if (weekDay == "Monday") {
+            
             return 0
         }
         if (weekDay == "Tuesday") {
@@ -179,9 +179,64 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
             return 4
         }
         else{
+            
             return 0
         }
+        
     }
     
     
-}
+    
+//    func AutoChangeDayType()-> String{
+//        var selectedDayType = [pickerView, selectedRowInComponent:0]
+//        let date = Date()
+//        let calendar = Calendar.current
+//        let hour = calendar.component(.hour, from: date)
+//        let minutes = calendar.component(.minute, from: date)
+//        let currenttime = "\(hour):\(minutes)"
+//
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.dateFormat = "EEEE"
+//        var weekDay =  "\(dateFormatter.string(from: Date()))" //
+//
+//
+//
+////        //STEPS TO DO: RETURN CURRENT VALUE FROM PICKERVIEW COMPONENT 0, ASSIGN LETTER TO THE INT, IF A, GO TO C next weekday. If C, go to B next weekday. If B, go ot A next weekday.
+    ///// use lists
+////        if (weekDay == "Monday") {
+////            if currenttime == "0:00"{
+////
+////            }å
+////        }
+////
+////        if (weekDay == "Tuesday") {
+////            if currenttime == "0:00"{
+////
+////            }
+////        }
+////
+////
+////        if (weekDay == "Wednesday") {
+////            if currenttime == "0:00"{
+////
+////            }
+////        }
+////
+////        if (weekDay == "Thursday") {
+////            if currenttime == "0:00"{
+////
+////            }
+////        }
+////
+////
+////
+////        return currenttime
+////
+////    }
+    
+        
+        
+    }
+    
+    
+    
