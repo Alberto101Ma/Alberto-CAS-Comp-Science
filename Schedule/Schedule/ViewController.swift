@@ -46,6 +46,9 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         super.viewDidLoad()
         pickerView.selectRow(getTodayWeekDay(), inComponent: 1, animated: true)
     }
+    override func viewWillAppear(_ animated: Bool) {
+        pickerView.selectRow(getTodayWeekDay(), inComponent: 1, animated: true)
+    }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int{
         return 3
