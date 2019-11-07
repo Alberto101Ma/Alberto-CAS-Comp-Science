@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		994424862371DB21003E64B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994424852371DB21003E64B4 /* ViewController.swift */; };
+		9944248A2371DCA5003E64B4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994424892371DCA5003E64B4 /* TableViewController.swift */; };
 		994B27F8236C98C40058AA1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994B27F7236C98C40058AA1D /* AppDelegate.swift */; };
 		994B27FA236C98C40058AA1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994B27F9236C98C40058AA1D /* SceneDelegate.swift */; };
 		994B27FF236C98C40058AA1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994B27FD236C98C40058AA1D /* Main.storyboard */; };
 		994B2801236C98C70058AA1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 994B2800236C98C70058AA1D /* Assets.xcassets */; };
 		994B2804236C98C70058AA1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994B2802236C98C70058AA1D /* LaunchScreen.storyboard */; };
-		994B280C236C9A030058AA1D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994B280B236C9A030058AA1D /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		994424852371DB21003E64B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		994424892371DCA5003E64B4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		994B27F4236C98C40058AA1D /* XRDS Dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XRDS Dictionary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		994B27F7236C98C40058AA1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		994B27F9236C98C40058AA1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -23,7 +26,6 @@
 		994B2800236C98C70058AA1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		994B2803236C98C70058AA1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		994B2805236C98C70058AA1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		994B280B236C9A030058AA1D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +61,8 @@
 				994B27F7236C98C40058AA1D /* AppDelegate.swift */,
 				994B27F9236C98C40058AA1D /* SceneDelegate.swift */,
 				994B27FD236C98C40058AA1D /* Main.storyboard */,
-				994B280B236C9A030058AA1D /* TableViewController.swift */,
+				994424892371DCA5003E64B4 /* TableViewController.swift */,
+				994424852371DB21003E64B4 /* ViewController.swift */,
 				994B2800236C98C70058AA1D /* Assets.xcassets */,
 				994B2802236C98C70058AA1D /* LaunchScreen.storyboard */,
 				994B2805236C98C70058AA1D /* Info.plist */,
@@ -139,7 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				994B27F8236C98C40058AA1D /* AppDelegate.swift in Sources */,
-				994B280C236C9A030058AA1D /* TableViewController.swift in Sources */,
+				994424862371DB21003E64B4 /* ViewController.swift in Sources */,
+				9944248A2371DCA5003E64B4 /* TableViewController.swift in Sources */,
 				994B27FA236C98C40058AA1D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +298,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				_ENABLE_BATCH_MODE = NO;
 			};
 			name = Debug;
 		};
@@ -311,6 +316,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				_ENABLE_BATCH_MODE = NO;
 			};
 			name = Release;
 		};
