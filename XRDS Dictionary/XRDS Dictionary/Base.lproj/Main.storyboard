@@ -46,22 +46,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zoc-Bh-dnx">
-                                <rect key="frame" x="160" y="187" width="42" height="155"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zoc-Bh-dnx">
+                                <rect key="frame" x="0.0" y="274" width="414" height="113"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAw-gJ-bOh">
-                                <rect key="frame" x="128" y="411" width="159" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAw-gJ-bOh">
+                                <rect key="frame" x="10" y="104" width="394" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="HCE-5g-fHy"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pAw-gJ-bOh" firstAttribute="leading" secondItem="Zoc-Bh-dnx" secondAttribute="leading" id="6JY-ND-nG4"/>
+                            <constraint firstItem="Zoc-Bh-dnx" firstAttribute="leading" secondItem="vou-tw-iJ8" secondAttribute="leading" constant="20" id="INE-qA-yyj"/>
+                            <constraint firstItem="pAw-gJ-bOh" firstAttribute="top" secondItem="vou-tw-iJ8" secondAttribute="top" constant="103" id="IaW-9f-nZO"/>
+                            <constraint firstItem="Zoc-Bh-dnx" firstAttribute="top" secondItem="pAw-gJ-bOh" secondAttribute="bottom" constant="83" id="Lms-8D-elt"/>
+                            <constraint firstItem="pAw-gJ-bOh" firstAttribute="trailing" secondItem="Zoc-Bh-dnx" secondAttribute="trailing" id="bpR-WR-hV0"/>
+                            <constraint firstItem="vou-tw-iJ8" firstAttribute="trailing" secondItem="Zoc-Bh-dnx" secondAttribute="trailing" constant="20" id="hj1-e2-vFd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vou-tw-iJ8"/>
                     </view>
                     <navigationItem key="navigationItem" id="u0t-ad-fFf"/>
