@@ -41,6 +41,7 @@
         <!--View Controller-->
         <scene sceneID="ims-iM-Y27">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2cq-eh-0hD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="lvV-2b-VaE" customClass="ViewController" customModule="XRDS_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wu4-Qw-vKl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -79,7 +80,6 @@
                         <outlet property="word" destination="pAw-gJ-bOh" id="yzG-MS-b5O"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2cq-eh-0hD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="586.95652173913049" y="10.714285714285714"/>
         </scene>
