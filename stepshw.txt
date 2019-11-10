@@ -7,23 +7,22 @@ Ready the storyboard (Storyboard)
 * Add a ViewController
 * Embed the TableViewController in a Navigation Controller
 * Create a show segue from the table cell
-* Add the cell reuse identifier
 
 
 
 Table is populated with data
 
 Configure TableView (Code)
+* Create a new cocoa touch class that extends UITableViewController
 * Set number of sections
-* Set number of rows
+* Set number of rowss
 * Configure cell
 
 
 
 Clicking a cell in the table goes to a new view
 
-Add the custom classes (Files / Storyboard)
-* Create a new cocoa touch class that extends UITableViewController
+* Add the custom classes (Files / Storyboard)
 * Create a new cocoa touch class that extends UIViewController
 * Link the classes in your storyboard
 
@@ -40,6 +39,7 @@ Pass the variables (Code)
 * Do whatever you need to with your variable in the custom View Controller class.
 Add variables (Storyboard)
 * Create outlets to your text view, button, or other storyboard objects.
+* Add the cell reuse identifier
 
 
 .
