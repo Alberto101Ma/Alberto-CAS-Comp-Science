@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99170948237DB9E800AD0100 /* boats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99170947237DB9E800AD0100 /* boats.swift */; };
+		9917094A237DC21600AD0100 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99170949237DC21600AD0100 /* ViewController.swift */; };
 		995059942375CF99004B36D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995059932375CF99004B36D4 /* AppDelegate.swift */; };
 		995059962375CF99004B36D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995059952375CF99004B36D4 /* SceneDelegate.swift */; };
 		9950599B2375CF99004B36D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995059992375CF99004B36D4 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		99170947237DB9E800AD0100 /* boats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boats.swift; sourceTree = "<group>"; };
+		99170949237DC21600AD0100 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		995059902375CF99004B36D4 /* boats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		995059932375CF99004B36D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		995059952375CF99004B36D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +63,9 @@
 				995059932375CF99004B36D4 /* AppDelegate.swift */,
 				995059952375CF99004B36D4 /* SceneDelegate.swift */,
 				995059992375CF99004B36D4 /* Main.storyboard */,
+				99170949237DC21600AD0100 /* ViewController.swift */,
 				995059A72375D365004B36D4 /* TableViewController.swift */,
+				99170947237DB9E800AD0100 /* boats.swift */,
 				9950599C2375CFA0004B36D4 /* Assets.xcassets */,
 				9950599E2375CFA0004B36D4 /* LaunchScreen.storyboard */,
 				995059A12375CFA0004B36D4 /* Info.plist */,
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9917094A237DC21600AD0100 /* ViewController.swift in Sources */,
 				995059942375CF99004B36D4 /* AppDelegate.swift in Sources */,
 				995059A82375D365004B36D4 /* TableViewController.swift in Sources */,
 				995059962375CF99004B36D4 /* SceneDelegate.swift in Sources */,
+				99170948237DB9E800AD0100 /* boats.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

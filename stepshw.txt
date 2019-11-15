@@ -2,11 +2,11 @@ Application shows a table view
 
 Ready the storyboard (Storyboard)
 * Delete all storyboard items & corresponding view controller swift files
+* Create a new cocoa touch class that extends UITableViewController
 * Add a TableViewController
 * Set the TableViewController as the initialView
 * Add a ViewController
 * Embed the TableViewController in a Navigation Controller
-* Create a show segue from the table cell
 * Add the cell reuse identifier
 
 
@@ -23,8 +23,8 @@ Configure TableView (Code)
 Clicking a cell in the table goes to a new view
 
 Add the custom classes (Files / Storyboard)
-* Create a new cocoa touch class that extends UITableViewController
 * Create a new cocoa touch class that extends UIViewController
+* Create a show segue from the table cell
 * Link the classes in your storyboard
 
 
@@ -41,5 +41,3 @@ Pass the variables (Code)
 Add variables (Storyboard)
 * Create outlets to your text view, button, or other storyboard objects.
 
-
-.

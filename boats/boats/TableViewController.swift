@@ -9,9 +9,29 @@
 import UIKit
 
 class TableViewController: UITableViewController{
+    
+    
+    var boats:[Boat] = [
+    
+    Boat(n: "test", dp:0 , c:"white", s: "large"),
+        Boat(n:"test123", dp:123, c:"black", s:"small"),
+
+        Boat(n:"Kayak", dp:0, c:"white",   s: "large"),
+   
+        Boat(n: "monohual", dp:23, c:"blue", s:"medium"),
+        
+        Boat(n:"Yacht", dp: 320,   c:"pink", s:"Large"),
+        
+        Boat(n:"Pirate Boat Ship", dp:200,  c:"Black", s: "Extra Large"),
+        
+        Boat(n:"Raft", dp:3, c:"brown",  s:"really small")
+        
+    ]
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        boatsorder = Array(boats.keys).sorted()
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -21,14 +41,11 @@ class TableViewController: UITableViewController{
     }
     
     // MARK: - Table view data source
-    var boats =  ["test":"123","test123":"bob"]
+
     
     
     
-    
-    
-    var boatsorder = [String]()
-    
+
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -36,16 +53,15 @@ class TableViewController: UITableViewController{
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return boatsorder.count
+        return boats.count
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let title = boatsorder[indexPath.row]
-        cell.textLabel!.text = title
-        
+        let title = boats[indexPath.row].name
+        cell.textLabel?.text = boats[indexPath.row].name
         
         // Configure the cell...
         
@@ -90,18 +106,16 @@ class TableViewController: UITableViewController{
     
     // MARK: - Navigation
     
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        // Get the new view controller using segue.destination.
-//        // Pass the selected object to the new view controller.
-//        let vc = segue.destination as! ViewController
-//
-//
-//
-//        let indexPath = self.tableView.indexPathForSelectedRow
-//        let word = self.vocabWords[indexPath!.row]
-//        vc.vocabWord = word
-//        vc.vocabDefinition = self.vocab[word]!
-//    }
+//    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {       // Get the new view controller using segue.destination.
+////       Pass the selected object to the new view controller.
+     let vc = segue.destination as! ViewController
+    let indexPath = self.tableView.indexPathForSelectedRow
+        
+    let currentboat = self.boats[indexPath!.row]
+    vc.boat = currentboat
     
+//
+    
+}
 }
