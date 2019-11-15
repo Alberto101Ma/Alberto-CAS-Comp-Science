@@ -10,8 +10,18 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
+    var notes:[Note] = [Note]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        var note = Note()
+        note.note = "Hello! This is a note to myself"
+        notes.append(note)
+        
+        let note2 = Note()
+        note2.note = "This is another note to myself."
+        notes.append(note2)
+        
+        print(notes)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -24,24 +34,36 @@ class TableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return notes.count
+        
     }
 
-    /*
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
+        
+        let title = notes[indexPath.row].note
+     cell.textLabel?.text = title
+
+        
         // Configure the cell...
 
         return cell
     }
-    */
-
+    
+    @IBAction func newnote(_ sender: Any) {
+        
+    }
+    
+    
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -77,14 +99,21 @@ class TableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     
+     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-    }
-    */
+     let vc = segue.destination as! ViewController
+    let indexPath = self.tableView.indexPathForSelectedRow
+        
+    let currentnote = self.notes[indexPath!.row]
+    vc.currentnote = currentnote
 
+
+    }
 }

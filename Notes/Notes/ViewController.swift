@@ -10,8 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var currentnote: Note?
+    
+    
+    
+    @IBOutlet weak var note: UILabel!
+    
+    @IBOutlet weak var date: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        date.text = "\(currentnote!.date)"
+        note.text = "\(currentnote!.note)"
 
         // Do any additional setup after loading the view.
     }
