@@ -1,1 +1,13 @@
-Control + click = check info
+Option + click = check info
+Option + Click on file: open another file on the right
+
+Control + I = Intent
+
+
+Command + Run = run
+Command + / = Block
+Command 0 = close file navigator
+Command 1 = File manaager
+Command + F = Find
+Command + T = New Tab
+
