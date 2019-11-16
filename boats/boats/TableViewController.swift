@@ -12,12 +12,12 @@ class TableViewController: UITableViewController{
     
     
     var boats:[Boat] = [
-    
-    Boat(n: "test", dp:0 , c:"white", s: "large"),
+        
+        Boat(n: "test", dp:0 , c:"white", s: "large"),
         Boat(n:"test123", dp:123, c:"black", s:"small"),
-
+        
         Boat(n:"Kayak", dp:0, c:"white",   s: "large"),
-   
+        
         Boat(n: "monohual", dp:23, c:"blue", s:"medium"),
         
         Boat(n:"Yacht", dp: 320,   c:"pink", s:"Large"),
@@ -41,11 +41,11 @@ class TableViewController: UITableViewController{
     }
     
     // MARK: - Table view data source
-
     
     
     
-
+    
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -106,16 +106,17 @@ class TableViewController: UITableViewController{
     
     // MARK: - Navigation
     
-//    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    //    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {       // Get the new view controller using segue.destination.
-////       Pass the selected object to the new view controller.
-     let vc = segue.destination as! ViewController
-    let indexPath = self.tableView.indexPathForSelectedRow
+        ////       Pass the selected object to the new view controller.
+        let vc = segue.destination as! ViewController
+        let indexPath = self.tableView.indexPathForSelectedRow
         
-    let currentboat = self.boats[indexPath!.row]
-    vc.boat = currentboat
-    
-//
-    
+        let currentboat = self.boats[indexPath!.row]
+        vc.boat = currentboat
+        
+        //
+        
+    }
 }
-}
+

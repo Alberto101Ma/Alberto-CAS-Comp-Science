@@ -10,4 +10,7 @@ Command 0 = close file navigator
 Command 1 = File manaager
 Command + F = Find
 Command + T = New Tab
+Command + N = New File
+
+Shift+ command + y = Console
 
