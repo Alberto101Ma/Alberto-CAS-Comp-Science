@@ -9,6 +9,6 @@
 import Foundation
 
 class Note{
-    var note:String = ""
+    var note:String = "Hi Notes App, "
     var date:Date = Date()
 }

@@ -34,9 +34,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="jQs-eH-W7z">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="bPy-uL-uaK">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="cob-8m-Qbh">
                             <connections>
-                                <action selector="newnote:" destination="dOa-YU-NZz" id="3Ln-b7-xzP"/>
+                                <segue destination="BwW-8Y-RUy" kind="show" id="Noo-7Z-bH5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -53,20 +53,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7V-eV-VGg">
-                                <rect key="frame" x="76" y="230" width="276" height="84"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INi-og-lel">
+                                <rect key="frame" x="0.0" y="661" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INi-og-lel">
-                                <rect key="frame" x="52" y="115" width="300" height="80"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="63X-1k-Bvc">
+                                <rect key="frame" x="0.0" y="88" width="414" height="565"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="0cL-Wf-Upo"/>
@@ -74,7 +76,7 @@
                     <navigationItem key="navigationItem" id="2br-JZ-6m6"/>
                     <connections>
                         <outlet property="date" destination="INi-og-lel" id="KPN-kb-RSJ"/>
-                        <outlet property="note" destination="f7V-eV-VGg" id="s9R-RO-cgX"/>
+                        <outlet property="note" destination="63X-1k-Bvc" id="XVE-ba-frg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abZ-7A-5AT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -100,4 +102,7 @@
             <point key="canvasLocation" x="1527.536231884058" y="-1857.5892857142856"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="lcn-oj-YTE"/>
+    </inferredMetricsTieBreakers>
 </document>

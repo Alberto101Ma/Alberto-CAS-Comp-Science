@@ -14,11 +14,11 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         var note = Note()
-        note.note = "Hello! This is a note to myself"
+        note.note = "Note 1"
         notes.append(note)
         
         let note2 = Note()
-        note2.note = "This is another note to myself."
+        note2.note = "Note 2"
         notes.append(note2)
         
         print(notes)
@@ -60,8 +60,7 @@ class TableViewController: UITableViewController {
     @IBAction func newnote(_ sender: Any) {
         
     }
-    
-    
+
     
     
     /*
@@ -105,15 +104,31 @@ class TableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
      
      
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tableView.reloadData()
+    }
+    
+    
+    
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-     let vc = segue.destination as! ViewController
-    let indexPath = self.tableView.indexPathForSelectedRow
-        
-    let currentnote = self.notes[indexPath!.row]
-    vc.currentnote = currentnote
+    let vc = segue.destination as! ViewController
+        if let indexPath = self.tableView.indexPathForSelectedRow{
+            let currentnote = self.notes[indexPath.row]
+            vc.currentnote = currentnote
 
+        }
+        else{
+            let currentnote = Note()
+            notes.append(currentnote)
+            vc.currentnote = currentnote
+            
+        }
 
+    
     }
 }

@@ -14,10 +14,11 @@ class ViewController: UIViewController {
     
     
     
-    @IBOutlet weak var note: UILabel!
+
     
     @IBOutlet weak var date: UILabel!
     
+    @IBOutlet weak var note: UITextView!
     
     
     override func viewDidLoad() {
@@ -27,8 +28,12 @@ class ViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        currentnote?.note = note.text!
+    }
 
+    
+    
     /*
     // MARK: - Navigation
 
