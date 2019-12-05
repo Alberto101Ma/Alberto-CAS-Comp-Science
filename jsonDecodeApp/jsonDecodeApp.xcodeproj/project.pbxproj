@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BFDB6EF223975B770046E86C /* jsonDecodeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jsonDecodeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFDB6EF223975B770046E86C /* Top Secret.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Top Secret.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDB6EF523975B770046E86C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFDB6EF723975B770046E86C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BFDB6EF923975B770046E86C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		BFDB6EF323975B770046E86C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BFDB6EF223975B770046E86C /* jsonDecodeApp.app */,
+				BFDB6EF223975B770046E86C /* Top Secret.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,7 +87,7 @@
 			);
 			name = jsonDecodeApp;
 			productName = jsonDecodeApp;
-			productReference = BFDB6EF223975B770046E86C /* jsonDecodeApp.app */;
+			productReference = BFDB6EF223975B770046E86C /* Top Secret.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -296,7 +296,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rileyjohngibbs.jsonDecodeApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Top Secret";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,7 +314,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rileyjohngibbs.jsonDecodeApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Top Secret";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
