@@ -14,7 +14,11 @@ class ViewController: UIViewController {
     var jsonFileString: String?
 
     // TODO: Come up with a better UI than just a single boring label.
-    @IBOutlet weak var myLabel: UILabel!
+
+    @IBOutlet weak var header: UILabel!
+    
+    @IBOutlet weak var suspect: UILabel!
+    @IBOutlet weak var hobbieslabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,27 +28,20 @@ class ViewController: UIViewController {
         }
         
         // This just puts the file contents (unparsed) into the label.
-        if let string = jsonFileString {
-            myLabel.text = string
-        }
+       // if let string = jsonFileString {
+        //    myLabel.text = string
+       // }
         
         if let data = jsonFileData {
-               let json = try? JSONSerialization.jsonObject(with: jsonFileData!, options: [])
-                
-                let dictionary = json as! [String: Any]
-                
-                let name: String = dictionary["name"] as! String
-                let hobbies: [String] = dictionary["hobbies"] as! [String]
-                let age: Int = dictionary["age"] as! Int
-                
-                var output = "Hello, my name is \(name). I am \(age) years old. My hobbies include: \(hobbies.joined(separator: ", "))."
-            
-             myLabel.text = output
-
+            let json = try? JSONSerialization.jsonObject(with: jsonFileData!, options: [])
+            let dictionary = json as! [String: Any]
+            let name: String = dictionary["name"] as! String
+            let hobbies: [String] = dictionary["hobbies"] as! [String]
+            let age: Int = dictionary["age"] as! Int
+            suspect.text = "Suspect: \(name)" + "\n" + "Age: " + "\(age)"
+            hobbieslabel.text = "Hobbies of suspect:" + "\n" + "-\(hobbies[0])" + "\n" + "-\(hobbies[1])" + "\n" + "-\(hobbies[2])"
         }
-        
-        
-        
     }
 
 }
+
