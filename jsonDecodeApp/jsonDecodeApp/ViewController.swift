@@ -33,7 +33,7 @@ class ViewController: UIViewController {
        // }
         
         if let data = jsonFileData {
-            let json = try? JSONSerialization.jsonObject(with: jsonFileData!, options: [])
+            let json = try? JSONSerialization.jsonObject(with: data, options: [])
             let dictionary = json as! [String: Any]
             let name: String = dictionary["name"] as! String
             let hobbies: [String] = dictionary["hobbies"] as! [String]
