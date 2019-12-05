@@ -1,0 +1,22 @@
+//
+//  data.json
+//  jsonDecodeApp
+//
+//  Created by Alberto Mancarella on 12/4/19.
+//  Copyright © 2019 Riley John Gibbs. All rights reserved.
+//
+
+import Foundation
+
+
+{
+
+    "name": "Alberto",
+    "hobbies": [
+        "Piano",
+        "Something",
+        "Something else"
+    ],
+    "age": 17
+    
+}
