@@ -6,7 +6,6 @@ import UIKit
 //By Alberto
 
 
-
 //Variables
 
 //var value can be change
@@ -16,20 +15,25 @@ var test: String = "Hello, playground"
 
 //once you declare var, you don't need to say var again if you re-define a variable, because the computer knows that it's a var.
 
+
 test = "Goodbye, playground"
 
 var speed: Int
 speed = 3
-//speed = "3" would be wrong, because it is not an integer. "" is a string
+//speed = "3" would be wrong, because it is not an integer. "" is a string. The type of variable must always stay the same.
 
 
 //-------------------------------------------------------------------------------
 //Optionals
-//Placeholders for values
-//Can Unwrap and find value from Nil, instead of crashing the app
+
+//What is the purpose of an optional? An optional can be used as a placeorder for situations where there is a missing value! A regular variable REQUIRES a value
+
+//Can Unwrap and find value from Nil, instead of crashing the app.
+
 //nil - non-existent-object
 
-//Syntax -> ! is to force unwrap an optional (extracting a value from an optional) DANGEROUS warning
+//Syntax -> ! is to force unwrap an optional (extracting a value from an optional) DANGEROUS warning! Read end of this section for more info
+
 
 // (A ?? B) --? first tries a and then gets to b if a fails
 
@@ -37,23 +41,40 @@ speed = 3
 var amianoptional: String?
 //declaring optionls
 print(amianoptional)
-//prints nil because it is an optional
+//prints nil because it is an optional and because no value has been declared. So, the variable is nil as a default
 
-
+//REMEMBER optional as in "optional value""
+//If you removed the question mark after String, the program would crash completely, because a regular variable NEEDS a value.
 
 var experiment: String? = "asdf"
-var total = (Int(experiment!) ?? 4 )//! is MAKE IT AN INTEGER! You are basically adding a non-optional type value to the variable
+print(experiment)
+print(experiment!)
+var total = (Int(experiment!) ?? 4 )//! is MAKE IT AN INTEGER! You are basically adding a non-optional type value to the variable. Note: you need to unwrap the experiment optional first!
 
 print(Int(experiment!))
 //Shows proof that it is nill, because the object is NON EXISTENT! CANNOT
 //make a text string an integer
 
-
-
 print(total)
 //chooses the 2nd option after the (   ??   ), since the first is nill
 
 
+print(Int("11")!)
+
+//Also final optional note. If you have a situation that you are turning a string to an integer, for example, swift will automatically output an optional. This is due that instead of the 11, that value can potentially contain other values that simply can't exist (nil). So you have to unwrap it! What swift is doing in the background is kinda like --> (a number ?? nil)
+
+//BE CAREFUL HOWEVER!
+//You can't do this --> print(Int("ASDF")!)
+//ERROR: Unexpectedly found nil while unwrapping an Optional value
+//The program expected to find a value after unwrapping the optional (automatically defined)
+//but STILL found nill. After UNWRAPPING an optional, make sure you get an actual value! In this example, the integer of string "asdf" DOESN'T EXIST! IT CANT WORK!
+
+//In summary: don't try to unwrap nil!
+//Don't do: print(nil!)
+
+//Ex:
+//var thiswillcrash: String?
+//print(thiswillcrash!)
 
 
 
@@ -102,13 +123,21 @@ print(anotherNewValue)
 let yetAnotherValue: Int = (painInTheButt! ?? 7 * 2000)
 //easiest way to write
 
+
 //last example of easiest way
 var x: String? = "4asdf"
 var optional = (Int(x!) ?? 3)
+//Must unwrap x, so you can actually use x.
+
 print(optional)
 //tries to do left first
-//The INT tried to convert the otpional into an integer, so thats why the code
-//doesnt crash. It's still considered an int + int
+
+
+//You don't actually need to declare an optional in that situation! This works as well!
+print(Int("test") ?? "This doesn't work!")
+print(Int(3) ?? "This does work!")
+
+
 
 
 //-------------------------------------------------------------------------------
@@ -228,5 +257,6 @@ print(responseMessages)
 
 let drinks = ["Soft Drinks": ["Cocoa-Cola", "Mountain Dew", "Sprite"],
 "Juice" :["Orange", "Apple", "Grape"]]
+//-------------------------------------------------------------------------------
 
 
