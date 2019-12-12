@@ -49,7 +49,7 @@ print(amianoptional)
 var experiment: String? = "asdf"
 print(experiment)
 print(experiment!)
-var total = Int(experiment!) ?? 4 //! is MAKE IT AN INTEGER! You are basically adding a non-optional type value to the variable. Note: you need to unwrap the experiment optional first!
+var total = (Int(experiment!) ?? 4 )//! is MAKE IT AN INTEGER! You are basically adding a non-optional type value to the variable. Note: you need to unwrap the experiment optional first!
 
 print(Int(experiment!))
 //Shows proof that it is nill, because the object is NON EXISTENT! CANNOT
@@ -260,41 +260,3 @@ let drinks = ["Soft Drinks": ["Cocoa-Cola", "Mountain Dew", "Sprite"],
 //-------------------------------------------------------------------------------
 
 
-let xrds: [String: Any] = [
-    "name": "Crossroads School",
-    "foundyear": 1971,
-    "campuses": [
-        "Norton",
-        "21st Street"
-    ]
-]
-
-
-
-//xrds = ["name": "Crossroads"]
-//automatically [String:String]
-//xrds["founding"] = 1971 WONT work, because it won't be a String String
-
-
-//note: array and list is the same thing!
-
-
-
-let name0 = xrds["name"]
-//not really useful
-
-
-let name1 = xrds["name"] as! String
-//very dangerous!
-
-
-let name2 = xrds["name"] as? String
-//safest way if you dont know what the input is
-//returns nil if xrds is NOT a string
-
-
-print(name0)
-print(name1)
-print(name2)
-
-//two-fold
