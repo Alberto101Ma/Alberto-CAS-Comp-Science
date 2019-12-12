@@ -39,7 +39,7 @@ class ViewController: UIViewController {
             return 5
         }
             
-        else if input.text == "The Revenge of the Sith" {
+        else if input.text == "Revenge of the Sith" {
             return 6
         }
         else if input.text == "A New Hope"{
@@ -78,7 +78,7 @@ class ViewController: UIViewController {
                     
                     let releasedate: String? = dictionary["release_date"] as? String
                     if let releasedate = releasedate{
-                        date.text = "Data released: \(releasedate)"
+                        date.text = "Release date: \(releasedate)"
                         
                         let director: String? = dictionary["director"] as? String
                         if let director = director{

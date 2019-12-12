@@ -99,9 +99,9 @@
 		D361A91F23A1E9D20005645A /* SwapiApp */ = {
 			isa = PBXGroup;
 			children = (
+				D361A92423A1E9D20005645A /* ViewController.swift */,
 				D361A92023A1E9D20005645A /* AppDelegate.swift */,
 				D361A92223A1E9D20005645A /* SceneDelegate.swift */,
-				D361A92423A1E9D20005645A /* ViewController.swift */,
 				D361A92623A1E9D20005645A /* Main.storyboard */,
 				D361A92923A1E9D40005645A /* Assets.xcassets */,
 				D361A92B23A1E9D40005645A /* LaunchScreen.storyboard */,
