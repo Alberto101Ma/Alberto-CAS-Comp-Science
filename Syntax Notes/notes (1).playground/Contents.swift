@@ -260,3 +260,13 @@ let drinks = ["Soft Drinks": ["Cocoa-Cola", "Mountain Dew", "Sprite"],
 //-------------------------------------------------------------------------------
 
 
+//You have class A and Class Isuck. Class iScuck is inside class A. If you go from class A, you are DOWNCASTING! Since there are many options and wont always work, use as! or as?. To UPCAST, which always work, use as.
+
+
+var iamastring = "iamastring"
+var upcastingtest = iamastring as Any
+//UPCASTING!
+
+
+var downcasting = upcastingtest as? String ?? "won't work!"
+print(downcasting)
