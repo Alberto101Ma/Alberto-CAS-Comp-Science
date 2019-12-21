@@ -24,7 +24,9 @@ class TableViewController: UITableViewController {
                         for movie in movies{
                             var t = movie["title"] as? String
                             var d = movie["director"] as? String
-                            var m = Starwars(title: t as! String, director: d as! String)
+                            var p = movie["producer"] as? String
+                            var number = movie["episode_id"] as? Int
+                            var m = Starwars(title: t as! String, director: d as! String, producer: p as! String, episodenumber: number as! Int)
                             list.append(m)
                         }
                         //let movies: String = dictionary["results"] as? String
@@ -115,15 +117,16 @@ class TableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
      
      
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        // Get the new view controller using segue.destination.
-//        // Pass the selected object to the new view controller.
-//        let vc = segue.destination as! ViewController
-//            if let indexPath = self.tableView.indexPathForSelectedRow{
-//                let currentmovie = self.list[indexPath.row]
-//                vc.currentnote = currentmovie
-//
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        let vc = segue.destination as! ViewController
+    
+        if let indexPath = self.tableView.indexPathForSelectedRow{
+            let currentmovie = self.list[indexPath.row];        vc.currentmovie = currentmovie
+
         }
 
-
+}
+}
 

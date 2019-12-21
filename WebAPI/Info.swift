@@ -11,8 +11,12 @@ import Foundation
 class Starwars{
     var title: String
     var director: String
-    init(title: String, director: String) {
+    var producer: String
+    var episodenumber: Int
+    init(title: String, director: String, producer: String, episodenumber: Int) {
         self.title = title
         self.director = director
+        self.producer = producer
+        self.episodenumber = episodenumber
     }
 }
