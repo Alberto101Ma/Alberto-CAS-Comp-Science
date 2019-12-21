@@ -1,6 +1,6 @@
 //
-//  TableViewController.swift
-//  apiApp
+//  UITableViewController.swift
+//  WebAPI
 //
 //  Created by Alberto Mancarella on 12/20/19.
 //  Copyright © 2019 Alberto Mancarella. All rights reserved.
@@ -48,7 +48,6 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        print(title!)
     }
 
     // MARK: - Table view data source
@@ -91,7 +90,7 @@ class TableViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 
@@ -123,9 +122,8 @@ class TableViewController: UITableViewController {
 //            if let indexPath = self.tableView.indexPathForSelectedRow{
 //                let currentmovie = self.list[indexPath.row]
 //                vc.currentnote = currentmovie
-//                
+//
         }
-    }
 
-}
+
 
