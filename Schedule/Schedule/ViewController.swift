@@ -39,11 +39,11 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
         pickerView.selectRow(getTodayWeekDay() ?? 0, inComponent: 1, animated: true)
-        pickerView.selectRow(switchDay() ?? 0, inComponent: 0, animated: true)
+        pickerView.selectRow(switchDay(), inComponent: 0, animated: true)
     }
     override func viewWillAppear(_ animated: Bool) {
         pickerView.selectRow(getTodayWeekDay() ?? 0, inComponent: 1, animated: true)
-        pickerView.selectRow(switchDay() ?? 0, inComponent: 0, animated: true)
+        pickerView.selectRow(switchDay() , inComponent: 0, animated: true)
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int{
@@ -189,30 +189,31 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     
-    func switchDay() -> Int?{
+    func switchDay() -> Int{
         print(dayTypes)
         
         var existingDay: String? = try? String(contentsOf: getWeekDayURL())
         
-        if existingDay == nil{
-            return nil
+        if existingDay! == nil{
+            existingDay = "weekend"
         }
         var todayDay: Int? = getTodayWeekDay() ?? 5
         var currentDayType: String? = try? String(contentsOf: getDayTypeURL())
-        if currentDayType == nil{
-            return nil
+        if currentDayType! == nil{
+            return 0
         }
         
-        if existingDay == "weekend" || todayDay == 5{
+        if existingDay! == "weekend" || todayDay! == 5{
             return Int(currentDayType!)!
         }
         print("check")
-        
+        print(getTodayWeekDay())
         var daysPassed = abs(getTodayWeekDay()! - Int(existingDay!)!)
         
         if currentDayType == "A"{
             if daysPassed == 0{
                 try!"0".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                print("hi")
             }
             if daysPassed == 1{
                 try!"2".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
@@ -224,7 +225,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
                 try!"0".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
             }
         }
-        if currentDayType == "C"{
+        else if currentDayType == "C"{
             if daysPassed == 0{
                 try!"2".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
             }
@@ -238,7 +239,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
                 try!"2".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
             }
         }
-        if currentDayType == "B"{
+        else if currentDayType == "B"{
             if daysPassed == 0{
                 try!"1".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
             }
@@ -253,6 +254,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
             }
         }
         var newDayType: String = try! String(contentsOf: getDayTypeURL())
+        print("asdf")
         return Int(newDayType)!
     }
 }
