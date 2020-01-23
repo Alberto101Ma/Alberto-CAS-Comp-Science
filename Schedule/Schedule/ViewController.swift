@@ -189,18 +189,26 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     
-    func switchDay() -> Int{
+    func switchDay() -> Int?{
         print(dayTypes)
-        var existingDay: String = try! String(contentsOf: getWeekDayURL())
+        
+        var existingDay: String? = try? String(contentsOf: getWeekDayURL())
+        
+        if existingDay == nil{
+            return nil
+        }
         var todayDay: Int? = getTodayWeekDay() ?? 5
-        var currentDayType: String = try! String(contentsOf: getDayTypeURL())
+        var currentDayType: String? = try? String(contentsOf: getDayTypeURL())
+        if currentDayType == nil{
+            return nil
+        }
         
         if existingDay == "weekend" || todayDay == 5{
-            return Int(currentDayType)!
+            return Int(currentDayType!)!
         }
         print("check")
         
-        var daysPassed = abs(getTodayWeekDay()! - Int(existingDay)!)
+        var daysPassed = abs(getTodayWeekDay()! - Int(existingDay!)!)
         
         if currentDayType == "A"{
             if daysPassed == 0{
