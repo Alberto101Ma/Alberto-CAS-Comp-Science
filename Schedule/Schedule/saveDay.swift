@@ -24,6 +24,7 @@ func getDayTypeURL() -> URL{
 
 
 
+
 //plan: if it's monday, tuesday, wednessday, thursday, or friday, get the last saved data of dayTypeURL, and add one.
 
 
