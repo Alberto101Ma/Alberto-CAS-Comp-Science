@@ -18,7 +18,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     var curWeekday = "Monday"
     var curSchedule = "Regular"
     
-    
     let dayTypes = ["A", "B", "C"]
     let weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
     let schedule = ["Regular", "Double", "Assembly"]
@@ -44,10 +43,10 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        pickerView.selectRow(getTodayWeekDay(), inComponent: 1, animated: true)
+        pickerView.selectRow(getTodayWeekDay() ?? 0, inComponent: 1, animated: true)
     }
     override func viewWillAppear(_ animated: Bool) {
-        pickerView.selectRow(getTodayWeekDay(), inComponent: 1, animated: true)
+        pickerView.selectRow(getTodayWeekDay() ?? 0, inComponent: 1, animated: true)
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int{
@@ -84,15 +83,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
         if component == 0{
             curDayType = dayTypes[row]
-            
         }
         else if component == 1{
             curWeekday = weekdays[row]
-            
         }
         else{
             curSchedule = schedule[row]
-            
         }
     }
     
@@ -102,6 +98,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         let whichdays =
             pickerView.selectedRow(inComponent:2)
         let ACBDay = dayTypes[dayTypeRow]
+        print("today is \(ACBDay)")
         let differentdaytime = schedule[whichdays]
         
         let periodRotation:[String:[String]] = [
@@ -121,14 +118,9 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     func getScheduleForDay(periods:[String], mySchedule:[String:String],time:[String]!) -> String{
         var output = ""
-        
-        
         var whatday = pickerView.selectedRow(inComponent:2)
         var getday = (schedule[whatday])
-        
-        
         if getday == "Double"{
-            
             var morningclasses = periods[0]
             var middayclasses = periods[2]
             
@@ -139,7 +131,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
             output += mySchedule[middayclasses] ?? "Free Period"
             output+="\n"
         }
-            
         else{
             let sequence = zip(time, periods)
             for (eachtime, period) in sequence{
@@ -156,17 +147,27 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         output +=  " \(time.last!): \(finalafternoonclass!) "
         
         print("\(getTodayWeekDay())")
+        
+        
+        //save day of the week
+        
+    
+        if getTodayWeekDay() == nil{
+            try!"weekend".write(to: getWeekDayURL(), atomically: true, encoding: .utf8 )
+        } else{
+            try!"\(getTodayWeekDay()!)".write(to: getWeekDayURL(), atomically: true, encoding: .utf8 )
+        }
+        print(checkIfDayPassed())
         return output
     }
     
     
-    func getTodayWeekDay()-> Int{
+    func getTodayWeekDay()-> Int?{
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEEE"
-        var weekDay =  "\(dateFormatter.string(from: Date()))" //
+        var weekDay =  "\(dateFormatter.string(from: Date()))" 
         print(weekDay)
         if (weekDay == "Monday") {
-            
             return 0
         }
         if (weekDay == "Tuesday") {
@@ -182,64 +183,89 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
             return 4
         }
         else{
-            
-            return 0
+            return nil
         }
         
     }
     
     
     
-//    func AutoChangeDayType()-> String{
-//        var selectedDayType = [pickerView, selectedRowInComponent:0]
-//        let date = Date()
-//        let calendar = Calendar.current
-//        let hour = calendar.component(.hour, from: date)
-//        let minutes = calendar.component(.minute, from: date)
-//        let currenttime = "\(hour):\(minutes)"
-//
-//        let dateFormatter = DateFormatter()
-//        dateFormatter.dateFormat = "EEEE"
-//        var weekDay =  "\(dateFormatter.string(from: Date()))" //
-//
-//
-//
-////        //STEPS TO DO: RETURN CURRENT VALUE FROM PICKERVIEW COMPONENT 0, ASSIGN LETTER TO THE INT, IF A, GO TO C next weekday. If C, go to B next weekday. If B, go ot A next weekday.
-    ///// use lists
-////        if (weekDay == "Monday") {
-////            if currenttime == "0:00"{
-////
-////            }å
-////        }
-////
-////        if (weekDay == "Tuesday") {
-////            if currenttime == "0:00"{
-////
-////            }
-////        }
-////
-////
-////        if (weekDay == "Wednesday") {
-////            if currenttime == "0:00"{
-////
-////            }
-////        }
-////
-////        if (weekDay == "Thursday") {
-////            if currenttime == "0:00"{
-////
-////            }
-////        }
-////
-////
-////
-////        return currenttime
-////
-////    }
     
-        
-        
+    
+    
+    func checkIfDayPassed() -> String{
+        print(dayTypes)
+        var existingDay: String = try! String(contentsOf: getWeekDayURL())
+        var todayDay: Int? = getTodayWeekDay() ?? 5
+        if existingDay == "weekend" && todayDay == 5{
+            //ASK RILEY FOR "OR" AND "AND"
+            return ("IT WAS A WEEKEND AT THE TIME I PRESSED THE BUTTON! RIGHT NOW IT")
+        }
+        else{
+            
+        //checks if a day has passed since press a button, and returns that to the beginning
+            var daysPassed = abs(getTodayWeekDay()! - Int(existingDay)!)
+
+            var currentDayType: String?
+            
+            if getDayTypeURL() == nil{
+                 var currentDayType = "B"
+            } else{
+                var currentDayType: String? = try? String(contentsOf: getDayTypeURL())
+            }
+            
+            
+            
+            if currentDayType == "A"{
+                if daysPassed == 0{
+                   try!"A".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                }
+                if daysPassed == 1{
+                try!"C".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                }
+                if daysPassed == 2{
+                try!"B".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                }
+                 if daysPassed == 3{
+                try!"A".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                }
+            }
+            if currentDayType == "C"{
+                if daysPassed == 0{
+                   try!"C".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                }
+                if daysPassed == 1{
+                try!"B".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                }
+                if daysPassed == 2{
+                try!"A".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                }
+                 if daysPassed == 3{
+                try!"C".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                }
+            }
+            if currentDayType == "B"{
+                if daysPassed == 0{
+                   try!"B".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                }
+                if daysPassed == 1{
+                try!"A".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                }
+                if daysPassed == 2{
+                try!"C".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                }
+                 if daysPassed == 3{
+                try!"B".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                }
+            }
+            
+        var existingName: String? = try? String(contentsOf: getDayTypeURL())
+            print(existingName)
+            return existingName
+            
+    
+
+        }
+
     }
-    
-    
-    
+}
