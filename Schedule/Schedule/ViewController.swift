@@ -198,6 +198,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
             existingDay = "weekend"
         }
         var todayDay = getTodayWeekDay() ?? 5
+        print("todayday \(todayDay)")
         var currentDayType: String? = try? String(contentsOf: getDayTypeURL())
         if currentDayType == nil{
             print("yoo")
@@ -218,44 +219,56 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         if currentDayType! == "0"{
             if daysPassed == 0{
                 try!"0".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                print("\(daysPassed) days passed")
                 print("hi")
             }
-            if daysPassed == 1{
+            else if daysPassed == 1{
                 try!"2".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                print("\(daysPassed) days passed")
             }
-            if daysPassed == 2{
+            else if daysPassed == 2{
                 try!"1".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                print("\(daysPassed) days passed")
             }
-            if daysPassed == 3{
+            else if daysPassed == 3{
                 try!"0".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                print("\(daysPassed) days passed")
             }
         }
         else if currentDayType! == "2"{
             if daysPassed == 0{
                 try!"2".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                print("\(daysPassed) days passed")
             }
-            if daysPassed == 1{
+            else if daysPassed == 1{
                 try!"1".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                print("\(daysPassed) days passed")
             }
-            if daysPassed == 2{
+            else if daysPassed == 2{
                 try!"0".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                print("\(daysPassed) days passed")
             }
-            if daysPassed == 3{
+            else if daysPassed == 3{
                 try!"2".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                print("\(daysPassed) days passed")
             }
         }
         else if currentDayType! == "1"{
             if daysPassed == 0{
                 try!"1".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                print("\(daysPassed) days passed")
             }
-            if daysPassed == 1{
+            else if daysPassed == 1{
                 try!"0".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                print("\(daysPassed) days passed")
             }
-            if daysPassed == 2{
+            else if daysPassed == 2{
                 try!"2".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                print("\(daysPassed) days passed")
             }
-            if daysPassed == 3{
+            else if daysPassed == 3{
                 try!"1".write(to: getDayTypeURL(), atomically: true, encoding: .utf8 )
+                print("\(daysPassed) days passed")
             }
         }
         var newDayType: String = try! String(contentsOf: getDayTypeURL())
