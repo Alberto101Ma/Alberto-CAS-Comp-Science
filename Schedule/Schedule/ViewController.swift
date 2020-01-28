@@ -194,14 +194,13 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
         var existingDay: String? = try? String(contentsOf: getWeekDayURL())
         
-        if existingDay == nil{
+        if existingDay! == nil{
             existingDay = "weekend"
         }
         var todayDay = getTodayWeekDay() ?? 5
         print("todayday \(todayDay)")
         var currentDayType: String? = try? String(contentsOf: getDayTypeURL())
-        if currentDayType == nil{
-            print("yoo")
+        if currentDayType! == nil{
             return 0
         }
         
