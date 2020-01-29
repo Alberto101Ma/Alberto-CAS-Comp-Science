@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let existingName: String? = try? String(contentsOf: getNameFileURL())
+ 
         greetingslabel.text = "Hello, \(existingName ?? "Alburito")!"
     }
     

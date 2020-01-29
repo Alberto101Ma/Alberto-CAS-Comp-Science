@@ -38,12 +38,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        pickerView.selectRow(getTodayWeekDay() ?? 0, inComponent: 1, animated: true)
+        pickerView.selectRow(getTodayWeekDay()! ?? 0, inComponent: 1, animated: true)
         pickerView.selectRow(switchDay(), inComponent: 0, animated: true)
     }
     override func viewWillAppear(_ animated: Bool) {
-        pickerView.selectRow(getTodayWeekDay() ?? 0, inComponent: 1, animated: true)
-        pickerView.selectRow(switchDay() , inComponent: 0, animated: true)
+        pickerView.selectRow(getTodayWeekDay()! ?? 0, inComponent: 1, animated: true)
+        pickerView.selectRow(switchDay(), inComponent: 0, animated: true)
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int{
