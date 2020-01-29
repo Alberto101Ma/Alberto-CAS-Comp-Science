@@ -15,8 +15,8 @@ My actual project ended up becoming very similar to the original "To-Do List"! A
 
 1. Recognize if the current day is a weekday or weekend (ESSENTIAL for the code to run!)
 2. If the current day is a weekday, allow user to SAVE the current Crossroads "Day"
-3.  Automatically update pickerView on the weekday AFTER the saved data ( if the day before was an A Day,  the app automatically goes to a C Day. If the day was a C Day automatically goes to an A Day.. ect).
-2. Allow user to still be able to change and SAVE the current Crossroads Day,  with the app, the day later, still able to auto-update to the correct Crossroads Day.
+3.  Automatically update pickerView on the weekday AFTER the saved data (if the day before was an A Day,  the app automatically goes to a C Day. If the day was a C Day automatically goes to an A Day.. ect).
+2. Allow user to select a different Crossroads Day on the pickerView and STILL be able to save that Crossroads Day (with the app, the day later, still able to auto-refresh to the correct Crossroads Day)!
 5. SAVE whether or not the current day is a weekday or a weekend when "Finding Schedule"
 4. Incorporate into previous project "Schedule App"
 
