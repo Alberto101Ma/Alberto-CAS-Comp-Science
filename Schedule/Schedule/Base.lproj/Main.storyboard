@@ -17,6 +17,9 @@
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPh-Kb-a22">
                                 <rect key="frame" x="0.0" y="30" width="414" height="260"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" updatesFrequently="YES"/>
+                                </accessibility>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="CYd-bu-gxk"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="hZk-Op-XNF"/>
