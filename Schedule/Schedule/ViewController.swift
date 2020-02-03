@@ -42,15 +42,10 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         pickerView.selectRow(switchDay(), inComponent: 0, animated: true)
     }
     override func viewWillAppear(_ animated: Bool) {
-        print("hi there")
         pickerView.selectRow(getTodayWeekDay()! ?? 0, inComponent: 1, animated: true)
         pickerView.selectRow(switchDay(), inComponent: 0, animated: true)
     }
     
-    func applicationWillEnterForeground(application: UIApplication){
-        pickerView.selectRow(getTodayWeekDay()! ?? 0, inComponent: 1, animated: true)
-        pickerView.selectRow(switchDay(), inComponent: 0, animated: true)
-    }
     func numberOfComponents(in pickerView: UIPickerView) -> Int{
         return 3
     }
