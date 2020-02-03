@@ -38,17 +38,17 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        pickerView.selectRow(getTodayWeekDay()! ?? 0, inComponent: 1, animated: true)
+        pickerView.selectRow(getTodayWeekDay() ?? 0, inComponent: 1, animated: true)
         pickerView.selectRow(switchDay(), inComponent: 0, animated: true)
     }
     override func viewWillAppear(_ animated: Bool) {
         print("hi there")
-        pickerView.selectRow(getTodayWeekDay()! ?? 0, inComponent: 1, animated: true)
+        pickerView.selectRow(getTodayWeekDay() ?? 0, inComponent: 1, animated: true)
         pickerView.selectRow(switchDay(), inComponent: 0, animated: true)
     }
     
     func applicationWillEnterForeground(application: UIApplication){
-        pickerView.selectRow(getTodayWeekDay()! ?? 0, inComponent: 1, animated: true)
+        pickerView.selectRow(getTodayWeekDay() ?? 0, inComponent: 1, animated: true)
         pickerView.selectRow(switchDay(), inComponent: 0, animated: true)
     }
     func numberOfComponents(in pickerView: UIPickerView) -> Int{
@@ -199,18 +199,18 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
         var existingDay: String? = try? String(contentsOf: getWeekDayURL())
         
-        if existingDay! == nil{
+        if existingDay == nil{
             existingDay = "weekend"
         }
-        var todayDay = getTodayWeekDay()! ?? 5
+        var todayDay = getTodayWeekDay() ?? 5
         print("todayday \(todayDay)")
         var currentDayType: String? = try? String(contentsOf: getDayTypeURL())
-        if currentDayType! == nil{
+        if currentDayType == nil{
             return 0
         }
         
         
-        if existingDay! == "weekend" || todayDay == 5{
+        if existingDay == "weekend" || todayDay == 5{
             print("WEEKEND")
             return Int(currentDayType!)!
         }
