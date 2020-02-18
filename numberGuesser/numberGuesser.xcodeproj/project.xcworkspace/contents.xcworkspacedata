@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FunButton.xcodeproj">
+      location = "self:numberGuesser.xcodeproj">
    </FileRef>
 </Workspace>

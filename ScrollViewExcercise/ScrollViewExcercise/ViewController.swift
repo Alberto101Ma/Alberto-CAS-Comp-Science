@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        for i in 1...25{
+        for i in 1...300{
             let newLabel = UILabel()
             newLabel.text = "Label \(i)"
             newLabel.frame = CGRect(x: 0, y: 0, width: 200, height: 30)

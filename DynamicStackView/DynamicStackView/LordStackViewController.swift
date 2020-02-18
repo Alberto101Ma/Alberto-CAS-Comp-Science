@@ -10,7 +10,7 @@ import UIKit
 
 class LordStackViewController: UIViewController {
 
-    var labelCount = 5
+    var labelCount = 10
     var count = 0
     
     @IBOutlet weak var hiStackView: UIStackView!
@@ -26,7 +26,6 @@ class LordStackViewController: UIViewController {
         
         for (x, label) in labels.enumerated(){
             label.textAlignment = .center
-            let mult = 1.0 / Double(labelCount - 1)
             hiStackView.addArrangedSubview(label)
             let constraint = NSLayoutConstraint(item: label, attribute: .height, relatedBy: .equal, toItem: labels[0], attribute: .height, multiplier: 1, constant: 1)
             
