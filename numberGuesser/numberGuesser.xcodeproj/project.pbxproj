@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		991F38B423FB86B200A7A139 /* ButtonMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991F38B323FB86B200A7A139 /* ButtonMessage.swift */; };
 		99AAFBC223F920FF000B2005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AAFBC123F920FF000B2005 /* AppDelegate.swift */; };
 		99AAFBC423F920FF000B2005 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AAFBC323F920FF000B2005 /* SceneDelegate.swift */; };
 		99AAFBC623F920FF000B2005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AAFBC523F920FF000B2005 /* ViewController.swift */; };
@@ -18,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		991F38B323FB86B200A7A139 /* ButtonMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonMessage.swift; sourceTree = "<group>"; };
 		99AAFBBE23F920FF000B2005 /* numberGuesser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = numberGuesser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99AAFBC123F920FF000B2005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99AAFBC323F920FF000B2005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				99AAFBC723F920FF000B2005 /* Main.storyboard */,
-				991F38B323FB86B200A7A139 /* ButtonMessage.swift */,
 				99AAFBE223F9276F000B2005 /* GameViewController.swift */,
 				99AAFBC523F920FF000B2005 /* ViewController.swift */,
 				99AAFBC123F920FF000B2005 /* AppDelegate.swift */,
@@ -146,7 +143,6 @@
 			files = (
 				99AAFBE323F9276F000B2005 /* GameViewController.swift in Sources */,
 				99AAFBC623F920FF000B2005 /* ViewController.swift in Sources */,
-				991F38B423FB86B200A7A139 /* ButtonMessage.swift in Sources */,
 				99AAFBC223F920FF000B2005 /* AppDelegate.swift in Sources */,
 				99AAFBC423F920FF000B2005 /* SceneDelegate.swift in Sources */,
 			);
