@@ -7,29 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		99AAFBC223F920FF000B2005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AAFBC123F920FF000B2005 /* AppDelegate.swift */; };
-		99AAFBC423F920FF000B2005 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AAFBC323F920FF000B2005 /* SceneDelegate.swift */; };
-		99AAFBC623F920FF000B2005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AAFBC523F920FF000B2005 /* ViewController.swift */; };
-		99AAFBC923F920FF000B2005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AAFBC723F920FF000B2005 /* Main.storyboard */; };
-		99AAFBCB23F920FF000B2005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99AAFBCA23F920FF000B2005 /* Assets.xcassets */; };
-		99AAFBCE23F920FF000B2005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AAFBCC23F920FF000B2005 /* LaunchScreen.storyboard */; };
-		99AAFBE323F9276F000B2005 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AAFBE223F9276F000B2005 /* GameViewController.swift */; };
+		99BB4215240EBC9200496ABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BB4214240EBC9200496ABA /* AppDelegate.swift */; };
+		99BB4217240EBC9200496ABA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BB4216240EBC9200496ABA /* SceneDelegate.swift */; };
+		99BB4219240EBC9200496ABA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BB4218240EBC9200496ABA /* ViewController.swift */; };
+		99BB421C240EBC9200496ABA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99BB421A240EBC9200496ABA /* Main.storyboard */; };
+		99BB421E240EBC9300496ABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99BB421D240EBC9300496ABA /* Assets.xcassets */; };
+		99BB4221240EBC9300496ABA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99BB421F240EBC9300496ABA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		99AAFBBE23F920FF000B2005 /* numberGuesser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = numberGuesser.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		99AAFBC123F920FF000B2005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		99AAFBC323F920FF000B2005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		99AAFBC523F920FF000B2005 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		99AAFBC823F920FF000B2005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		99AAFBCA23F920FF000B2005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		99AAFBCD23F920FF000B2005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		99AAFBCF23F920FF000B2005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		99AAFBE223F9276F000B2005 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		99BB4211240EBC9200496ABA /* CameraAndFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraAndFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99BB4214240EBC9200496ABA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		99BB4216240EBC9200496ABA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		99BB4218240EBC9200496ABA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		99BB421B240EBC9200496ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99BB421D240EBC9300496ABA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99BB4220240EBC9300496ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99BB4222240EBC9300496ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		99AAFBBB23F920FF000B2005 /* Frameworks */ = {
+		99BB420E240EBC9200496ABA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,73 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		99AAFBB523F920FF000B2005 = {
+		99BB4208240EBC9200496ABA = {
 			isa = PBXGroup;
 			children = (
-				99AAFBC023F920FF000B2005 /* numberGuesser */,
-				99AAFBBF23F920FF000B2005 /* Products */,
+				99BB4213240EBC9200496ABA /* CameraAndFilter */,
+				99BB4212240EBC9200496ABA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		99AAFBBF23F920FF000B2005 /* Products */ = {
+		99BB4212240EBC9200496ABA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				99AAFBBE23F920FF000B2005 /* numberGuesser.app */,
+				99BB4211240EBC9200496ABA /* CameraAndFilter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		99AAFBC023F920FF000B2005 /* numberGuesser */ = {
+		99BB4213240EBC9200496ABA /* CameraAndFilter */ = {
 			isa = PBXGroup;
 			children = (
-				99AAFBC723F920FF000B2005 /* Main.storyboard */,
-				99AAFBE223F9276F000B2005 /* GameViewController.swift */,
-				99AAFBC523F920FF000B2005 /* ViewController.swift */,
-				99AAFBC123F920FF000B2005 /* AppDelegate.swift */,
-				99AAFBC323F920FF000B2005 /* SceneDelegate.swift */,
-				99AAFBCA23F920FF000B2005 /* Assets.xcassets */,
-				99AAFBCC23F920FF000B2005 /* LaunchScreen.storyboard */,
-				99AAFBCF23F920FF000B2005 /* Info.plist */,
+				99BB4214240EBC9200496ABA /* AppDelegate.swift */,
+				99BB4216240EBC9200496ABA /* SceneDelegate.swift */,
+				99BB4218240EBC9200496ABA /* ViewController.swift */,
+				99BB421A240EBC9200496ABA /* Main.storyboard */,
+				99BB421D240EBC9300496ABA /* Assets.xcassets */,
+				99BB421F240EBC9300496ABA /* LaunchScreen.storyboard */,
+				99BB4222240EBC9300496ABA /* Info.plist */,
 			);
-			path = numberGuesser;
+			path = CameraAndFilter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		99AAFBBD23F920FF000B2005 /* numberGuesser */ = {
+		99BB4210240EBC9200496ABA /* CameraAndFilter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 99AAFBD223F920FF000B2005 /* Build configuration list for PBXNativeTarget "numberGuesser" */;
+			buildConfigurationList = 99BB4225240EBC9300496ABA /* Build configuration list for PBXNativeTarget "CameraAndFilter" */;
 			buildPhases = (
-				99AAFBBA23F920FF000B2005 /* Sources */,
-				99AAFBBB23F920FF000B2005 /* Frameworks */,
-				99AAFBBC23F920FF000B2005 /* Resources */,
+				99BB420D240EBC9200496ABA /* Sources */,
+				99BB420E240EBC9200496ABA /* Frameworks */,
+				99BB420F240EBC9200496ABA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = numberGuesser;
-			productName = numberGuesser;
-			productReference = 99AAFBBE23F920FF000B2005 /* numberGuesser.app */;
+			name = CameraAndFilter;
+			productName = CameraAndFilter;
+			productReference = 99BB4211240EBC9200496ABA /* CameraAndFilter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		99AAFBB623F920FF000B2005 /* Project object */ = {
+		99BB4209240EBC9200496ABA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Alberto Mancarella";
 				TargetAttributes = {
-					99AAFBBD23F920FF000B2005 = {
+					99BB4210240EBC9200496ABA = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 99AAFBB923F920FF000B2005 /* Build configuration list for PBXProject "numberGuesser" */;
+			buildConfigurationList = 99BB420C240EBC9200496ABA /* Build configuration list for PBXProject "CameraAndFilter" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 99AAFBB523F920FF000B2005;
-			productRefGroup = 99AAFBBF23F920FF000B2005 /* Products */;
+			mainGroup = 99BB4208240EBC9200496ABA;
+			productRefGroup = 99BB4212240EBC9200496ABA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				99AAFBBD23F920FF000B2005 /* numberGuesser */,
+				99BB4210240EBC9200496ABA /* CameraAndFilter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		99AAFBBC23F920FF000B2005 /* Resources */ = {
+		99BB420F240EBC9200496ABA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99AAFBCE23F920FF000B2005 /* LaunchScreen.storyboard in Resources */,
-				99AAFBCB23F920FF000B2005 /* Assets.xcassets in Resources */,
-				99AAFBC923F920FF000B2005 /* Main.storyboard in Resources */,
+				99BB4221240EBC9300496ABA /* LaunchScreen.storyboard in Resources */,
+				99BB421E240EBC9300496ABA /* Assets.xcassets in Resources */,
+				99BB421C240EBC9200496ABA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		99AAFBBA23F920FF000B2005 /* Sources */ = {
+		99BB420D240EBC9200496ABA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99AAFBE323F9276F000B2005 /* GameViewController.swift in Sources */,
-				99AAFBC623F920FF000B2005 /* ViewController.swift in Sources */,
-				99AAFBC223F920FF000B2005 /* AppDelegate.swift in Sources */,
-				99AAFBC423F920FF000B2005 /* SceneDelegate.swift in Sources */,
+				99BB4219240EBC9200496ABA /* ViewController.swift in Sources */,
+				99BB4215240EBC9200496ABA /* AppDelegate.swift in Sources */,
+				99BB4217240EBC9200496ABA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		99AAFBC723F920FF000B2005 /* Main.storyboard */ = {
+		99BB421A240EBC9200496ABA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				99AAFBC823F920FF000B2005 /* Base */,
+				99BB421B240EBC9200496ABA /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		99AAFBCC23F920FF000B2005 /* LaunchScreen.storyboard */ = {
+		99BB421F240EBC9300496ABA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				99AAFBCD23F920FF000B2005 /* Base */,
+				99BB4220240EBC9300496ABA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		99AAFBD023F920FF000B2005 /* Debug */ = {
+		99BB4223240EBC9300496ABA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		99AAFBD123F920FF000B2005 /* Release */ = {
+		99BB4224240EBC9300496ABA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -284,38 +280,36 @@
 			};
 			name = Release;
 		};
-		99AAFBD323F920FF000B2005 /* Debug */ = {
+		99BB4226240EBC9300496ABA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F3G27URJF5;
-				INFOPLIST_FILE = numberGuesser/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				INFOPLIST_FILE = CameraAndFilter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Alberto.numberGuesser;
+				PRODUCT_BUNDLE_IDENTIFIER = Alberto.CameraAndFilter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		99AAFBD423F920FF000B2005 /* Release */ = {
+		99BB4227240EBC9300496ABA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F3G27URJF5;
-				INFOPLIST_FILE = numberGuesser/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				INFOPLIST_FILE = CameraAndFilter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Alberto.numberGuesser;
+				PRODUCT_BUNDLE_IDENTIFIER = Alberto.CameraAndFilter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,25 +319,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		99AAFBB923F920FF000B2005 /* Build configuration list for PBXProject "numberGuesser" */ = {
+		99BB420C240EBC9200496ABA /* Build configuration list for PBXProject "CameraAndFilter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				99AAFBD023F920FF000B2005 /* Debug */,
-				99AAFBD123F920FF000B2005 /* Release */,
+				99BB4223240EBC9300496ABA /* Debug */,
+				99BB4224240EBC9300496ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		99AAFBD223F920FF000B2005 /* Build configuration list for PBXNativeTarget "numberGuesser" */ = {
+		99BB4225240EBC9300496ABA /* Build configuration list for PBXNativeTarget "CameraAndFilter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				99AAFBD323F920FF000B2005 /* Debug */,
-				99AAFBD423F920FF000B2005 /* Release */,
+				99BB4226240EBC9300496ABA /* Debug */,
+				99BB4227240EBC9300496ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 99AAFBB623F920FF000B2005 /* Project object */;
+	rootObject = 99BB4209240EBC9200496ABA /* Project object */;
 }
