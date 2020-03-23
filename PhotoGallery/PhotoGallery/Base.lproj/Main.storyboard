@@ -37,7 +37,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiK-g7-r0I">
-                                <rect key="frame" x="-1" y="776" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="812" width="414" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -59,7 +59,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="z4X-Q4-qtV"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="curDate" destination="iiK-g7-r0I" id="Tuh-Dw-lGm"/>
                         <outlet property="curDescription" destination="Gw3-Nk-Box" id="AXa-tX-fCb"/>
@@ -84,7 +83,7 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="IFa-GN-Bkl" detailTextLabel="IfK-Iq-CVb" imageView="hHr-PF-kCX" rowHeight="103" style="IBUITableViewCellStyleSubtitle" id="7El-8J-YJU">
                                 <rect key="frame" x="0.0" y="28" width="414" height="103"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" tableViewCell="7El-8J-YJU" id="pus-ZA-Hha">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7El-8J-YJU" id="pus-ZA-Hha">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="103"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -102,13 +101,11 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" image="Unknown" id="hHr-PF-kCX">
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Unknown" id="hHr-PF-kCX">
                                             <rect key="frame" x="20" y="0.0" width="184" height="103"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <viewLayoutGuide key="safeArea" id="0YR-KV-mnR"/>
                                         </imageView>
                                     </subviews>
-                                    <viewLayoutGuide key="safeArea" id="ZLw-YZ-dRC"/>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="cell" id="HtR-sM-Rba"/>

@@ -10,7 +10,6 @@ import UIKit
 
 class GameViewController: UIViewController {
     var labelCount = 0
-    let newButton = UIButton()
     @IBOutlet weak var manyButtons: UIStackView!
     var difficulty = String()
     @IBOutlet weak var scrollView: UIScrollView!
@@ -93,12 +92,7 @@ class GameViewController: UIViewController {
             }
             
         }
-        
-        
-        
     }
     
     
-    
-
 }
