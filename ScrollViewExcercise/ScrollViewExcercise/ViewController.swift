@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Do any additional setup after l oading the view.
         for i in 1...300{
             let newLabel = UILabel()
             newLabel.text = "Label \(i)"
