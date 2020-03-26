@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AreasOfInterest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fCf-hT-uvP">
+                                <rect key="frame" x="-8" y="99" width="422" height="646"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="646" id="V1H-A8-yHm"/>
+                                </constraints>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywf-J3-d3E">
+                                <rect key="frame" x="3" y="753" width="101" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Zoom Out"/>
+                                <connections>
+                                    <action selector="zoomOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WtB-3r-7N5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgQ-uM-iEV">
+                                <rect key="frame" x="20" y="818" width="138" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="ipG-bF-L9c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="New York"/>
+                                <connections>
+                                    <action selector="goNewYork:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CiX-6C-1NK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSb-BF-HXn">
+                                <rect key="frame" x="149" y="818" width="138" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Rome"/>
+                                <connections>
+                                    <action selector="goItaly:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kg4-Zl-sXD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ee-mg-13s">
+                                <rect key="frame" x="266" y="818" width="148" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="f7A-6t-FRZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="L.A."/>
+                                <connections>
+                                    <action selector="goLA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AhF-AT-geX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koS-KE-wVR">
+                                <rect key="frame" x="320" y="753" width="82" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Zoom In"/>
+                                <connections>
+                                    <action selector="zoomIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oXX-RT-O5c"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDS-pQ-c6h">
+                                <rect key="frame" x="3" y="44" width="411" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="8wB-CN-Spk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ywf-J3-d3E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="3" id="0ao-06-cEX"/>
+                            <constraint firstItem="9ee-mg-13s" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9ZU-mJ-Myh"/>
+                            <constraint firstItem="fCf-hT-uvP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-28" id="9wT-NN-ptq"/>
+                            <constraint firstItem="hgQ-uM-iEV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="L7C-tT-LUu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hgQ-uM-iEV" secondAttribute="bottom" constant="4" id="LVG-mm-nji"/>
+                            <constraint firstItem="eDS-pQ-c6h" firstAttribute="trailing" secondItem="fCf-hT-uvP" secondAttribute="trailing" id="VKn-EQ-Qqf"/>
+                            <constraint firstItem="9ee-mg-13s" firstAttribute="top" secondItem="koS-KE-wVR" secondAttribute="bottom" constant="25" id="YEX-hy-xDi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="koS-KE-wVR" secondAttribute="trailing" constant="12" id="cGy-AF-4cv"/>
+                            <constraint firstItem="CSb-BF-HXn" firstAttribute="baseline" secondItem="9ee-mg-13s" secondAttribute="baseline" id="gM6-39-RXY"/>
+                            <constraint firstItem="hgQ-uM-iEV" firstAttribute="top" secondItem="ywf-J3-d3E" secondAttribute="bottom" constant="25" id="ioZ-sG-nh2"/>
+                            <constraint firstItem="9ee-mg-13s" firstAttribute="trailing" secondItem="fCf-hT-uvP" secondAttribute="trailing" id="kJc-qF-BXa"/>
+                            <constraint firstItem="hgQ-uM-iEV" firstAttribute="baseline" secondItem="CSb-BF-HXn" secondAttribute="baseline" id="lRt-fj-3h4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CSb-BF-HXn" secondAttribute="trailing" constant="127" id="oiH-hJ-iWt"/>
+                            <constraint firstItem="eDS-pQ-c6h" firstAttribute="leading" secondItem="ywf-J3-d3E" secondAttribute="leading" id="qTU-F8-Le3"/>
+                            <constraint firstItem="CSb-BF-HXn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="u7n-Ss-R3H"/>
+                            <constraint firstItem="CSb-BF-HXn" firstAttribute="top" secondItem="fCf-hT-uvP" secondAttribute="bottom" constant="73" id="uqN-Zc-wxF"/>
+                            <constraint firstItem="eDS-pQ-c6h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wNP-ql-2O0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="LA" destination="9ee-mg-13s" id="1hS-lP-37Y"/>
+                        <outlet property="NewYork" destination="hgQ-uM-iEV" id="aNf-4L-ryA"/>
+                        <outlet property="Rome" destination="CSb-BF-HXn" id="PnM-gg-Y6b"/>
+                        <outlet property="mapView" destination="fCf-hT-uvP" id="WVF-Sw-iS9"/>
+                        <outlet property="place" destination="eDS-pQ-c6h" id="mtb-b6-Ho7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+</document>
