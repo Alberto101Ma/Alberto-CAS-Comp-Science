@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController, MKMapViewDelegate {
+class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate  {
     
     
     let CrossroadsLat = 34.024639
@@ -20,13 +20,12 @@ class ViewController: UIViewController, MKMapViewDelegate {
     let ItalyLong = 12.492373
     let LALat = 34.052235
     let LALong = -118.243683
-    
+    var locationManager: CLLocationManager!
     
 
     
     @IBOutlet weak var mapView: MKMapView!
   
-    
     @IBOutlet weak var NewYork: UIButton!
     
     @IBOutlet weak var Rome: UIButton!
@@ -38,16 +37,33 @@ class ViewController: UIViewController, MKMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        locationManager = CLLocationManager()
+             locationManager.delegate = self
+    locationManager.requestWhenInUseAuthorization()
+        
+        
+       mapView.delegate = self
+        
+        
         NewYork.setTitleColor(UIColor.gray, for: .normal)
         LA.setTitleColor(UIColor.gray, for: .normal)
         Rome.setTitleColor(UIColor.gray, for: .normal)
         // Do any additional setup after loading the view.
         
         
-        mapView.delegate = self
         // Do any additional setup after loading the view.
         
+        let crossroadsCoord = CLLocationCoordinate2D(latitude: CrossroadsLat, longitude: CrossroadsLong)
+        let point = MKMapPoint(crossroadsCoord)
+        let size = MKMapSize(width: 1000, height: 1000)
+        let rect = MKMapRect(origin: point, size: size)
+        mapView.setRegion(MKCoordinateRegion(rect), animated: true)
+        
         changeLocation(CrossroadsLat: 34.0240892 , CrossroadsLong: -118.4747321)
+        
     }
     
     func changeLocation(CrossroadsLat: Double, CrossroadsLong: Double){
@@ -148,6 +164,25 @@ class ViewController: UIViewController, MKMapViewDelegate {
         LA.setTitleColor(UIColor.green, for: .normal)
         Rome.setTitleColor(UIColor.gray, for: .normal)
     }
+    
+    @IBAction func CurrentLocation(_ sender: Any) {
+        locationManager.requestLocation()
+    }
+    
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let span = mapView.region.span
+        let coords = locations.suffix(1)[0].coordinate
+        let newRegion = MKCoordinateRegion(center: coords, span: span)
+        mapView.setRegion(newRegion, animated: true)
+    }
+    
+    // Handle an error when trying to get a new location by just printing the error
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error)
+    }
+    
+    
     
 }
 
