@@ -172,6 +172,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let span = mapView.region.span
+        NewYork.setTitleColor(UIColor.gray, for: .normal)
+          LA.setTitleColor(UIColor.gray, for: .normal)
+          Rome.setTitleColor(UIColor.gray, for: .normal)
         let coords = locations.suffix(1)[0].coordinate
         let newRegion = MKCoordinateRegion(center: coords, span: span)
         mapView.setRegion(newRegion, animated: true)
