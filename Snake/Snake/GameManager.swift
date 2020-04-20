@@ -7,7 +7,7 @@
 //
 
 import SpriteKit
-
+//print test
 class GameManager {
     var scene: GameScene!
     
