@@ -15,7 +15,6 @@
 		99ACB1C12447638500C2FD52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99ACB1C02447638500C2FD52 /* Assets.xcassets */; };
 		99ACB1C42447638500C2FD52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99ACB1C22447638500C2FD52 /* LaunchScreen.storyboard */; };
 		99ACB1CC2447659800C2FD52 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ACB1CB2447659800C2FD52 /* GameManager.swift */; };
-		99FB0AF4245181A2004C3C4D /* SaveScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FB0AF3245181A2004C3C4D /* SaveScore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		99ACB1C32447638500C2FD52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99ACB1C52447638500C2FD52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99ACB1CB2447659800C2FD52 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
-		99FB0AF3245181A2004C3C4D /* SaveScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveScore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +63,6 @@
 				99ACB1B32447638200C2FD52 /* AppDelegate.swift */,
 				99ACB1B52447638200C2FD52 /* GameScene.sks */,
 				99ACB1B92447638200C2FD52 /* GameScene.swift */,
-				99FB0AF3245181A2004C3C4D /* SaveScore.swift */,
 				99ACB1CB2447659800C2FD52 /* GameManager.swift */,
 				99ACB1BB2447638200C2FD52 /* GameViewController.swift */,
 				99ACB1BD2447638200C2FD52 /* Main.storyboard */,
@@ -152,7 +149,6 @@
 				99ACB1CC2447659800C2FD52 /* GameManager.swift in Sources */,
 				99ACB1BC2447638200C2FD52 /* GameViewController.swift in Sources */,
 				99ACB1B42447638200C2FD52 /* AppDelegate.swift in Sources */,
-				99FB0AF4245181A2004C3C4D /* SaveScore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

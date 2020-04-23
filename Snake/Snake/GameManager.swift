@@ -217,32 +217,17 @@ class GameManager {
             }
         }
     }
-
-    
-    
-    
-    
     
     private func updateScore() {
-     
-       
-        
-        let newStringScore: String = try! String(contentsOf: SaveScore())
-        var newScore = Int(newStringScore)!
-        
-    
-        if currentScore >  newScore {
-            let stringScore = "\(currentScore)"
-            try! stringScore.write(to: SaveScore(), atomically: true, encoding: .utf8 )
-        } else {
+        if currentScore > UserDefaults.standard.integer(forKey: "bestScore") {
+            UserDefaults.standard.set(currentScore, forKey: "bestScore")
+        }
         currentScore = 0
         scene.currentScore.text = "Score: 0"
-        scene.bestScore.text = "Best Score: \(newScore)"
+        scene.bestScore.text = "Best Score: \(UserDefaults.standard.integer(forKey: "bestScore"))"
     }
     
 }
 
 
-
-}
 
