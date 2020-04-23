@@ -29,8 +29,8 @@ class GameManager {
     
     func initGames() {
         scene.playerPositions.append((10, 10))
-        scene.playerPositions.append((10, 11))
-        scene.playerPositions.append((10, 12))
+        scene.playerPositions.append((10, 10))
+        scene.playerPositions.append((10, 10))
         renderChange()
         generateNewPoint()
     }
@@ -224,11 +224,11 @@ class GameManager {
     
     
     private func updateScore() {
-     
     
-        let newStringScore: String = try! String(contentsOf: SaveScore()) ?? "0"
-        var newScore = Int(newStringScore)!
         
+        let newStringScore: String? = try? String(contentsOf: SaveScore())
+        var newScore = Int(newStringScore ?? "0") ?? 0
+ 
     
         if currentScore >  newScore {
             let stringScore = "\(currentScore)"
