@@ -28,7 +28,39 @@ class GameScene: SKScene {
         initializeMenu()
         game = GameManager(scene: self)
         initializeGameView()
-    }
+        
+           let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(swipeR))
+            swipeRight.direction = .right
+            view.addGestureRecognizer(swipeRight)
+            
+            let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swipeL))
+            swipeLeft.direction = .left
+            view.addGestureRecognizer(swipeLeft)
+            
+            let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(swipeU))
+            swipeUp.direction = .up
+            view.addGestureRecognizer(swipeUp)
+            
+            let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(swipeD))
+            swipeDown.direction = .down
+            view.addGestureRecognizer(swipeDown)
+        }
+        
+        @objc func swipeR() {
+            game.swipe(ID: .right)
+        }
+        
+        @objc func swipeU() {
+            game.swipe(ID: .up)
+        }
+        
+        @objc func swipeL() {
+            game.swipe(ID: .left)
+        }
+        
+        @objc func swipeD() {
+            game.swipe(ID: .down)
+        }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches{
