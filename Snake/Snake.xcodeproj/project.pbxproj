@@ -63,12 +63,12 @@
 				99ACB1B32447638200C2FD52 /* AppDelegate.swift */,
 				99ACB1B52447638200C2FD52 /* GameScene.sks */,
 				99ACB1B92447638200C2FD52 /* GameScene.swift */,
+				99ACB1CB2447659800C2FD52 /* GameManager.swift */,
 				99ACB1BB2447638200C2FD52 /* GameViewController.swift */,
 				99ACB1BD2447638200C2FD52 /* Main.storyboard */,
 				99ACB1C02447638500C2FD52 /* Assets.xcassets */,
 				99ACB1C22447638500C2FD52 /* LaunchScreen.storyboard */,
 				99ACB1C52447638500C2FD52 /* Info.plist */,
-				99ACB1CB2447659800C2FD52 /* GameManager.swift */,
 			);
 			path = Snake;
 			sourceTree = "<group>";
