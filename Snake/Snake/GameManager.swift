@@ -225,9 +225,8 @@ class GameManager {
     
     private func updateScore() {
      
-       
-        
-        let newStringScore: String = try! String(contentsOf: SaveScore())
+    
+        let newStringScore: String = try! String(contentsOf: SaveScore()) ?? "0"
         var newScore = Int(newStringScore)!
         
     
